@@ -1,10 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Nav from "../nav/Nav";
 
-function App() {
+export function DefaultApp() {
   return (
     <div className="App">
+      <Nav/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -23,4 +25,4 @@ function App() {
   );
 }
 
-export default App;
+export default DefaultApp;
