@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import MyRoutes from "./apps/routes";
+import MyRoutes from "./features/routes";
 
 let searchParams = new URLSearchParams(document.location.search);
 console.log(searchParams)

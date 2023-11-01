@@ -32,7 +32,7 @@ export interface Slide {
   items?: string[];
 }
 
-const Slide = (props: { slide: Slide }) => {
+const Slide1 = (props: { slide: Slide }) => {
   let { slide } = props;
   console.log(slide.items);
   return (
@@ -82,7 +82,7 @@ const SlideShow = () => {
             <li>Date: {slideShow.date}</li>
           </ul>
           {slideShow.slides.map((s) => (
-            <Slide key={s.title} slide={s} />
+            <Slide1 key={s.title} slide={s} />
           ))}
         </div>
       )}
