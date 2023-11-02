@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmyreact=self.webpackChunkmyreact||[]).push([[112],{1112:function(e,n,o){o.r(n),o.d(n,{AuthedApp:function(){return s}});o(2791);var t=o(184),s=function(){return window.setTimeout((function(){console.log("Post message"),window.opener.postMessage("ok","*"),window.close()}),3e3),(0,t.jsx)("div",{children:"Login..."})};n.default=s}}]);
+//# sourceMappingURL=112.cdbe9d08.chunk.js.map
