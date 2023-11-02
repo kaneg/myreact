@@ -31,8 +31,9 @@ const AuthRequired = ({children}: { children: any }) => {
     const showLogin = () => {
         listen()
         const windowFeatures = "left=100,top=100,width=320,height=320";
+        const url = document.location.href.replace(document.location.hash, '#authed')
         const handle = window.open(
-            "http://localhost:3000/#authed",
+            url,
             "mozillaWindow",
             windowFeatures,
         );
