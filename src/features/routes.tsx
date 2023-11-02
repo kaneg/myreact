@@ -6,6 +6,8 @@ import {Routes} from "react-router";
 const MyApp = React.lazy(() => import('./my/App'));
 const FluentApp = React.lazy(() => import('./fluent/App'));
 const DefaultApp = React.lazy(() => import('./default/App'));
+const AuthApp = React.lazy(() => import('./auth/App'));
+const AuthedApp = React.lazy(() => import('./authed/App'));
 
 const MyRoutes = () => {
     return (
@@ -21,6 +23,12 @@ const MyRoutes = () => {
                 <Route element={<React.Suspense fallback={<>...</>}>
                     <FluentApp/>
                 </React.Suspense>} path="fluent"/>
+                <Route element={<React.Suspense fallback={<>...</>}>
+                    <AuthApp/>
+                </React.Suspense>} path="auth"/>
+                <Route element={<React.Suspense fallback={<>...</>}>
+                    <AuthedApp/>
+                </React.Suspense>} path="authed"/>
             </Routes>
         </HashRouter>
     )
