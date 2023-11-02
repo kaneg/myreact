@@ -24,6 +24,8 @@ const AuthRequired = ({children}: { children: any }) => {
 
     const listen = () => {
         window.addEventListener("message", (event) => {
+            setAuthed(true)
+            isLoginInProgress = false
             console.log(event)
         });
     }
@@ -39,9 +41,8 @@ const AuthRequired = ({children}: { children: any }) => {
         );
         console.log("handle:", handle)
         if (handle != null) {
-            handle.onbeforeunload = function () {
-                console.log("Logged in")
-                setAuthed(true)
+            handle.onclose = function () {
+                console.log("closed window")
                 isLoginInProgress = false
             }
         }
