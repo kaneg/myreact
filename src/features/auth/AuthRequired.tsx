@@ -11,14 +11,20 @@ const AuthRequired = ({children}: { children: any }) => {
         }
         isLoginInProgress = true
         console.log("Login ...")
-        fetch('http://localhost:8000/auth.txt', {mode: 'no-cors', cache: "no-cache"})
+        fetch(document.location.href, {mode: 'no-cors', cache: "no-cache"})
             .then((rsp) => rsp.text())
             .then((data: any) => {
-                console.log("authed")
-                setAuthed(true)
-                isLoginInProgress = false
+                let searchParams = new URLSearchParams(document.location.search);
+                if (searchParams.has('authed')) {
+                    console.log("authed")
+                    setAuthed(true)
+                    isLoginInProgress = false
+                } else {
+                    showLogin()
+                }
+
             }).catch(() => {
-            showLogin()
+
         });
     };
 

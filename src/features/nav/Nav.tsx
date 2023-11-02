@@ -9,10 +9,16 @@ const Nav=()=>{
                     <a href="#my">My</a>
                 </li>
                 <li>
-                    <a href="#fluent">Fluent</a>
+                    <a href="?#auth">UnAuthed</a>
                 </li>
                 <li>
-                    <a href="#auth">Auth</a>
+                    <a href="?authed#auth">Authed</a>
+                </li>
+                <li>
+                    <a href="?#fluent">Fluent(UnAuthed)</a>
+                </li>
+                <li>
+                    <a href="#fluent">Fluent</a>
                 </li>
             </ul>
         </div>
