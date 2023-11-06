@@ -7,13 +7,14 @@ import AuthRequired from "../auth/AuthRequired";
 
 export const FluentApp = () => {
     return (
-        <AuthRequired>
-            <FluentProvider theme={teamsLightTheme}>
+        <FluentProvider theme={teamsLightTheme}>
+            <AuthRequired>
                 <Nav/>
                 <Button appearance="primary">Get started</Button>
                 <MyCard/>
-            </FluentProvider>
-        </AuthRequired>
+            </AuthRequired>
+        </FluentProvider>
+
     )
 }
 export default FluentApp

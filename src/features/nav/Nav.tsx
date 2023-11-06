@@ -18,7 +18,7 @@ const Nav=()=>{
                     <a href="?#fluent">Fluent(UnAuthed)</a>
                 </li>
                 <li>
-                    <a href="#fluent">Fluent</a>
+                    <a href="?authed#fluent">Fluent</a>
                 </li>
             </ul>
         </div>

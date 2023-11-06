@@ -4,6 +4,7 @@ import MyForm from './MyForm';
 import MyHttpGet from './MyHttpGet';
 import {SlideShow as SlideShow1} from './SlideShow';
 import Nav from "../nav/Nav";
+import Bio from "./Bio";
 
 export const MyApp = () => {
     const [currentDate, setCurrentDate] = useState(new Date());
@@ -30,6 +31,7 @@ export const MyApp = () => {
             <MyHttpGet/>
             <MyForm/>
             <SlideShow1/>
+            <Bio/>
         </div>
     );
 };

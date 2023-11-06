@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import MyButton from './Foo';
+import React, {useState} from 'react';
 
 const MyHttpGet = () => {
   const [httpBinResult, setHttpBinResult] = useState('NA');
